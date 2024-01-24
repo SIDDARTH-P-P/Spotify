@@ -1,0 +1,10 @@
+@tailwind utilities;
+
+*{
+  @apply box-border m-0 scroll-smooth;
+  /* @apply bg-black */
+}
+
+html,body,#root{
+  @apply h-full w-full;
+}
