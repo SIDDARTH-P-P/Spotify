@@ -3,12 +3,12 @@ export default function Body() {
         <>
             <div className="px-[30px] mt-[40px]">
                 <div className="flex justify-between">
-                    <span >Spotify playlist</span><span>Show all</span>
+                    <span className="text-white" >Spotify playlist</span><span className="text-white">Show all</span>
                 </div>
             </div>
             <div className="grid grid-cols-5 gap-5 px-[20px]">
 
-            <div className="bg-blue-300 rounded-[10px]">
+            <div className="bg-[#221f24] rounded-[10px]">
                     <div className="p-[20px]">
                         <img className="w-full h-full rounded-[15px]" src="./spo.jpg" alt="" />
                         <h3>Dinner with friend</h3>
@@ -16,7 +16,7 @@ export default function Body() {
                     </div>
                 </div>
 
-                <div className="bg-blue-300 rounded-[10px]">
+                <div className="bg-[#221f24] rounded-[10px]">
                     <div className="p-[20px]">
                         <img className="w-full h-full rounded-[15px]" src="./spo.jpg" alt="" />
                         <h3>Dinner with friend</h3>
@@ -24,7 +24,7 @@ export default function Body() {
                     </div>
                 </div>
 
-                <div className="bg-blue-300 rounded-[10px]">
+                <div className="bg-[#221f24] rounded-[10px]">
                     <div className="p-[20px]">
                         <img className="w-full h-full rounded-[15px]" src="./spo.jpg" alt="" />
                         <h3>Dinner with friend</h3>
@@ -32,7 +32,7 @@ export default function Body() {
                     </div>
                 </div>
 
-                <div className="bg-blue-300 rounded-[10px]">
+                <div className="bg-[#221f24] rounded-[10px]">
                     <div className="p-[20px]">
                         <img className="w-full h-full rounded-[15px]" src="./spo.jpg" alt="" />
                         <h3>Dinner with friend</h3>
@@ -40,7 +40,7 @@ export default function Body() {
                     </div>
                 </div>
 
-                <div className="bg-blue-300 rounded-[10px]">
+                <div className="bg-[#221f24] rounded-[10px]">
                     <div className="p-[20px]">
                         <img className=" w-full h-full rounded-[15px]" src="./spo.jpg" alt="" />
                         <h3>Dinner with friend</h3>
