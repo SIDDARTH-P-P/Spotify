@@ -7,8 +7,8 @@ export default function Home() {
     return (
         <>
         <Toaster/>
-            <div class="md:grid md:grid-cols-4 md:gap-1">
-                <div class="bg-black">
+            <div className="md:grid md:grid-cols-4 md:gap-1">
+                <div className="bg-black">
                     <div className="bg-[#07050e] m-[5px] rounded-[7px]">
                         <h1 className="flex justify-start ms-[30px] text-white text-[20px] py-[15px]"><img className="w-[30px] bg-white rounded-full me-[10px]" src="./spotify.png" alt="" />Spotify</h1>
                         <h1 className="flex justify-start ms-[30px] text-white text-[20px] py-[15px]"><img className="w-[30px] bg-white rounded-full me-[10px]" src="./home.svg" alt="" />Home</h1>
@@ -43,7 +43,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div class="col-span-3 bg-[#07050e]">
+                <div className="col-span-3 bg-[#07050e]">
                     <Homenav/>
                     <Body/>
                     <Footer/>

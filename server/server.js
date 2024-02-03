@@ -15,6 +15,7 @@ app.use(express.json({limit:"25mb"}))
 app.use(urlencoded({extended:true}))
 app.use("/api",router)
 
+app.use(express.static("./dist"))
 app.get("*/",(req,res)=>{
     return res.sendFile(path.resolve("./dist/index.html"));
 })

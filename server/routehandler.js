@@ -1,4 +1,5 @@
 import users from "./schema/users.js";
+import files from "./schema/files.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
@@ -38,6 +39,34 @@ export async function login(req,res){
             return res.status(200).json({msg:"login success",token});
         }
         return res.status(201).json("Invalid password or username")
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+
+export async function adddata(req,res){
+    try {
+        let {coverimage,name,description} = req.body
+        let add = await files.create({
+            cover_image:coverimage,
+            name,
+            description,
+            file:req.file,
+        })
+        if(add){
+            return res.status(200).json("sussessfully added");
+        }
+        return res.status(201).json("error to add file !");
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+export async function getdata(req,res){
+    try {
+        let datas = await files.find()
+        res.json(datas)
     } catch (error) {
         console.log(error);
     }
