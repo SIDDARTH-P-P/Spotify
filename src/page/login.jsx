@@ -20,7 +20,6 @@ export default function Login() {
             onSubmit: async (value) => {
                 let response = Login_request(value);
                 response.then(res => {
-                    console.log(res.data);
                     if (res.status == 201) {
                         return toast.error(res.data)
                     }

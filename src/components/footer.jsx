@@ -31,10 +31,6 @@ export default function Footer() {
                     <span><img className="w-[30px] bg-white rounded-full" src="./facebook.svg" alt="" /></span>
                 </div>
             </div>
-
-            <div className="border-8 border-sky-500">
-                <h1>he</h1>
-            </div>
         </div>
         
     );

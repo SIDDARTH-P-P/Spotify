@@ -5,6 +5,7 @@ import Adminpage from "./page/admin";
 import { BrowserRouter,Route,Routes } from "react-router-dom";
 import config from "./config";
 
+
 config();
 
 export default function App() {
