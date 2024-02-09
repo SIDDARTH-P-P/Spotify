@@ -40,7 +40,6 @@ export default function Home() {
         let name = event.target[0].value;
         list_name(name, token)
     }
-
     return (
         <>
             <Toaster />
@@ -81,7 +80,7 @@ export default function Home() {
                 <div className="col-span-3 bg-[#07050e]">
                     <Homenav />
                     {
-                        playlistflag ? <Body setsong={setsong} /> : <Play playlist={playlist}/>
+                        playlistflag ? <Play playlist={playlist} setsong={setsong}/> : <Body setsong={setsong} /> 
                     }
                     <Footer />
                 </div>
@@ -113,7 +112,11 @@ function Noplaylist() {
 
 
 
-function Play({playlist}) {
+function Play({playlist, setsong}) {
+    console.log(setsong);
+    function add(item){
+        setsong(item)
+    }
     return (
         <>
             <div className="px-[30px] mt-[40px]">
